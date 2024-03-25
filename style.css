@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* ---------------------navbar----------------------------------------- */
+
+.navbar {
+    background-color: #6b55d8;
+}
+
+.navbar a:hover {
+    background-color: gray;
+}
+
+
+/* ---------------------navbar----------------------------------------- */
+
+/* ---------------------Footer----------------------------------------- */
+
+.footer {
+    background-color: #6b55d8;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+h5 {
+    padding-bottom: 2%;
+}
+
+
+/* ---------------------Footer----------------------------------------- */
+
+/* ---------------------css-page-accueil----------------------------------------- */
+
+main {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+main h1 {
+    color: red;
+}
+
+.accueil {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.accueil img {
+    height: 290px;
+    width: 430px;
+}
+
+.accueil p {
+    text-align: center;
+    padding-right: 6%;
+}
+
+main section h2 {
+    color: red;
+    margin-top: 5%;
+}
+
+.start-quiz-btn {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.start-quiz-btn:hover {
+    background-color: #6b55d8;
+}
+
+/* ---------------------css-page-connexion--/--inscription----------------------------------------- */
+
+
+#content {
+    min-height: 63vh;
+    /* Nouveau */
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    flex-shrink: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 0;
+} 
+
+header p {
+    color: #6b55d8;
+}
+
+.message-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#besoin {
+    margin-bottom: 4%;
+}
+
+/* ---------------------responsive-------------------------------------------- */
+
+
+
+@media screen and (max-width: 600px) {
+    .accueil {
+        display: block;
+    }
+
+    .nav-links {
+        margin-top: 5%;
+        flex-direction: colum;
+    }
+
+    .nav-links a {
+        margin-left: 2px;
+    }
+
+    .logo img {
+        height: 80px;
+        width: 90px;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .container {
+        margin-top: 2%;
+    }
+}
