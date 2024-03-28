@@ -65,34 +65,51 @@
     }
     ?>
 
-    <form class="container mt-5 mb-5">
-        <div class="card">
-            <div class="card-header">Résultats du Quiz</div>
+    <!-- Vérifier si l'utilisateur a répondu à au moins une question  -->
+    <?php
+    if (empty ($_POST['reponse'])) {
+        echo '<div class="message-container text-center" style="color: red;">';
+        echo "Vous n'avez répondu à aucune question.";
+        echo '</div>';
+    } else {
+        // Le reste de votre code ici...
+    }
+    ?>
+
+    <!-- --------------------------main-------------------------- -->
+
+    <main class="container mt-5 mb-5">
+        <article class="card">
+            <header class="card-header">Résultats du Quiz</header>
             <div class="card-body">
-                <h5 class="card-title">Votre score :
+                <h2 class="card-title">Votre score :
                     <?php echo $score; ?>
-                </h5>
+                </h2>
+                <br>
                 <?php if (!empty ($feedback)): ?>
-                    <p>Voici les détails des questions que vous avez manquées :</p>
-                    <ul>
-                        <?php foreach ($feedback as $info): ?>
-                            <li>
-                                <strong>Question :</strong>
-                                <?php echo htmlspecialchars($info['question']); ?><br>
-                                <strong>Votre réponse :</strong>
-                                <?php echo htmlspecialchars($info['votreReponse']); ?><br>
-                                <strong>Réponse correcte :</strong>
-                                <?php echo htmlspecialchars($info['bonneReponse']); ?>
-                            </li>
-                        <?php endforeach; ?>
-                    </ul>
+                    <section>
+                        <h3>Voici les détails des questions que vous avez manquées :</h3>
+                        <br>
+                        <ul>
+                            <?php foreach ($feedback as $info): ?>
+                                <li>
+                                    <strong>Question :</strong>
+                                    <?php echo htmlspecialchars($info['question']); ?><br>
+                                    <strong class="incorrect-answer">Votre réponse :</strong>
+                                    <?php echo htmlspecialchars($info['votreReponse']); ?><br><br>
+                                    <strong class="correct-answer">Réponse correcte :</strong>
+                                    <?php echo htmlspecialchars($info['bonneReponse']); ?><br><br>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </section>
                 <?php else: ?>
-                    <p>Félicitations ! Vous avez répondu correctement à toutes les questions.</p>
+                    <p>Félicitations !!! Vous avez répondu correctement à toutes les questions.</p>
                 <?php endif; ?>
                 <a href="quiz.php" class="btn btn-primary">Essayer un autre quiz</a>
             </div>
-        </div>
-    </form>
+        </article>
+    </main>
 
     <!-- --------------footer-------------------------- -->
 

@@ -64,10 +64,6 @@ if (!isset ($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         </card>
     </main>
 
-    <!-- ------------------------------------main---------------------------------- -->
-
-
-
     <!-- --------------footer-------------------------- -->
 
 
@@ -78,12 +74,10 @@ if (!isset ($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <!-- --------------footer-------------------------- -->
 
 
-    <script src="quiz.js"></script>
-    <script src="bootstrap.min.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS, jQuery, et Popper.js -->
     <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
-    <script src="jsnavbar.js"></script>
     <script src="https://kit.fontawesome.com/e7f058bcf8.js" crossorigin="anonymous"></script>
 </body>
 

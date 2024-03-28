@@ -122,6 +122,23 @@ header p {
     margin-bottom: 4%;
 }
 
+/* --------------------------- reponse quiz-------------------------------------------- */
+
+.incorrect-answer{
+    color: red;
+}
+
+.correct-answer{
+    color: green;
+}
+
+/* --------------------------- reponse quiz-------------------------------------------- */
+
+.list-group-item-action:hover {
+    background-color: #6b55d8;
+    color: #ffffff; 
+}
+
 /* ---------------------responsive-------------------------------------------- */
 
 

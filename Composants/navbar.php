@@ -14,11 +14,11 @@ if (session_status() == PHP_SESSION_NONE) {
             <li class="nav-item">
                 <a class="nav-link text-white" href="accueil.php">Accueil</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="quiz.php">Quiz</a>
-            </li>
             <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']): ?>
                 <!-- Liens pour les utilisateurs connectés -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="quiz.php">Quiz</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="resultats.php">Résultats</a>
                 </li>
@@ -43,7 +43,6 @@ if (session_status() == PHP_SESSION_NONE) {
         </ul>
     </section>
 </nav>
-
 
 
 

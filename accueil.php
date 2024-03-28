@@ -13,6 +13,7 @@
     <title>Accueil -Master Quiz</title>
 </head>
 
+
 <body>
 
     <!-- --------------------------navbar-------------------------- -->
@@ -20,12 +21,11 @@
     <?php
     include 'Composants/navbar.php';
     ?>
-    
+
 
     <!-- --------------------------navbar-------------------------- -->
 
     <!-- ------------------------main-------------------------- -->
-    
 
     <main class="container mt-4">
         <h1 class="text-center mb-4">Master-Quiz</h1>
@@ -47,13 +47,11 @@
         <section class="accueil-quiz text-center">
             <h2>Accéder au Quiz ↓</h2>
             <a href="quiz.php" class="btn btn-primary start-quiz-btn">Voir les quiz disponibles</a>
-
         </section>
     </main>
 
+    
     <!-- ------------------------main-------------------------- -->
-
-
 
     <!-- --------------footer-------------------------- -->
 
@@ -69,6 +67,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="accueil.js"></script>
 </body>
 
 </html>
