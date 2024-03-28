@@ -83,7 +83,7 @@
             <header class="card-header">Résultats du Quiz</header>
             <div class="card-body">
                 <h2 class="card-title">Votre score :
-                    <?php echo $score; ?>
+                    <?php echo $score."/6"; ?>
                 </h2>
                 <br>
                 <?php if (!empty ($feedback)): ?>
