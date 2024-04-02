@@ -9,7 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
     <!-- Fichier Css -->
     <link rel="stylesheet" href="style.css">
-    <title>Accueil -Master Quiz</title>
+    <title>Classement -Master Quiz</title>
 </head>
 
 <body>

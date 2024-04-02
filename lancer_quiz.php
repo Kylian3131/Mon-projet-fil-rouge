@@ -6,7 +6,7 @@ $idQuiz = isset ($_GET['id']) ? $_GET['id'] : die ("ID du quiz non spécifié.")
 
 try {
     // Récupérez les questions pour le quiz spécifié.
-    $sqlQuestions = "SELECT id_questions, question FROM Questions WHERE id_quiz = ?";
+    $sqlQuestions = "SELECT id_questions, question FROM questions WHERE id_quiz = ?";
     $stmtQuestions = $conn->prepare($sqlQuestions);
     $stmtQuestions->execute([$idQuiz]);
     $questions = $stmtQuestions->fetchAll();
@@ -27,7 +27,7 @@ try {
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
     <!-- Fichier CSS -->
     <link rel="stylesheet" href="style.css">
-    <title>Connexion - Master Quiz</title>
+    <title>Jouer - Master Quiz</title>
 </head>
 
 <body>
@@ -52,7 +52,7 @@ try {
                     </p>
                     <?php
                     // Récupérez les réponses pour la question courante.
-                    $sqlReponses = "SELECT id_reponses, reponse, reponse_correct FROM Reponses WHERE id_questions = ?";
+                    $sqlReponses = "SELECT id_reponses, reponse, reponse_correct FROM reponses WHERE id_questions = ?";
                     $stmtReponses = $conn->prepare($sqlReponses);
                     $stmtReponses->execute([$question['id_questions']]);
                     $reponses = $stmtReponses->fetchAll();

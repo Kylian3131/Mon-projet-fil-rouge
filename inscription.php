@@ -114,7 +114,7 @@
                 $stmt = $conn->prepare($sql);
                 $stmt->execute([$pseudo, $email, $hashedPassword]);
                 echo '<div class="message-container">';
-                echo "<p>Inscription réussie!</p>";
+                echo "<h4 class=correct-answer>Inscription réussie!</h4>";
                 echo '</div>';
             } catch (PDOException $exception) {
                 die("Erreur lors de l'inscription : " . $exception->getMessage());

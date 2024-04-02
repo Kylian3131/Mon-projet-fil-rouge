@@ -10,7 +10,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
     <!-- Fichier CSS -->
     <link rel="stylesheet" href="style.css">
-    <title>Connexion - Master Quiz</title>
+    <title>Resultat-Quiz -Master Quiz</title>
 </head>
 
 <body>
@@ -36,8 +36,8 @@
         foreach ($_POST['reponse'] as $idQuestion => $idReponseUtilisateur) {
             // Récupérer la question, la réponse de l'utilisateur et la bonne réponse.
             $sql = "SELECT Q.question, R.reponse, R.reponse_correct, R.id_reponses 
-                FROM Questions Q
-                JOIN Reponses R ON Q.id_questions = R.id_questions 
+                FROM questions Q
+                JOIN reponses R ON Q.id_questions = R.id_questions 
                 WHERE Q.id_questions = ?";
             $stmt = $conn->prepare($sql);
             $stmt->execute([$idQuestion]);

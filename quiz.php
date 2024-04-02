@@ -39,7 +39,7 @@ if (!isset ($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
     try {
         // requête SQL pour récupérer tous les quiz
-        $sql = "SELECT id_quiz, nom_quiz FROM Quiz";
+        $sql = "SELECT id_quiz, nom_quiz FROM quiz";
         $stmt = $conn->prepare($sql);
         $stmt->execute();
 
