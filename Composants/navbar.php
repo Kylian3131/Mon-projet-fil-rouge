@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 ?>
 <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="accueil.php"><img src="logo-master-quiz.jpg" alt="Logo" style="height: 100px;"></a>
+    <a class="navbar-brand" href="index.php"><img src="logo-master-quiz.jpg" alt="Logo" style="height: 100px;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -12,7 +12,7 @@ if (session_status() == PHP_SESSION_NONE) {
     <section class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav text-center">
             <li class="nav-item">
-                <a class="nav-link text-white" href="accueil.php">Accueil</a>
+                <a class="nav-link text-white" href="index.php">Accueil</a>
             </li>
             <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']): ?>
                 <!-- Liens pour les utilisateurs connectés -->
