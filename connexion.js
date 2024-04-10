@@ -3,7 +3,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     let password = document.getElementById('password').value;
 
     if (!pseudo || !password) {
-        event.preventDefault(); // Empêcher la soumission du formulaire
+        event.preventDefault(); // Empêche la soumission du formulaire
         alert('Veuillez remplir tous les champs.');
     }
 });

@@ -66,17 +66,6 @@
     }
     ?>
 
-    <!-- Vérifier si l'utilisateur a répondu à au moins une question  -->
-    <?php
-    if (empty ($_POST['reponse'])) {
-        echo '<div class="message-container text-center" style="color: red;">';
-        echo "Vous n'avez répondu à aucune question.";
-        echo '</div>';
-    } else {
-        // Le reste de votre code ici...
-    }
-    ?>
-
     <!-- --------------------------main-------------------------- -->
 
     <main class="container mt-5 mb-5">
